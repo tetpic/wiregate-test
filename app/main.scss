@@ -1,0 +1,73 @@
+//SERAVEK
+@font-face {
+    font-family: "Seravek";
+    src: url("../fonts/seravek/seravek-regular.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Seravek";
+    src: url("../fonts/seravek/seravek-extralight.ttf");
+    font-weight: 200;
+}
+@font-face {
+    font-family: "Seravek";
+    src: url("../fonts/seravek/seravek-light.ttf");
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Seravek";
+    src: url("../fonts/seravek/seravek-medium.ttf");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Seravek";
+    src: url("../fonts/seravek/seravek-bold.ttf");
+    font-weight: 700;
+}
+
+
+//INTER
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/inter/inter-extralight.ttf");
+    font-weight: 200;
+}
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/inter/inter-light.ttf");
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/inter/inter-regular.ttf");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/inter/inter-medium.ttf");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/inter/inter-medium.ttf");
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/inter/inter-bold.ttf");
+    font-weight: 700;
+}
+
+//POPPINS
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/poppins/poppins-regular.ttf");
+    font-weight: 400;
+}
+
+p {
+    font-family: "Poppins";
+    font-weight: 400;
+    color: black;
+    font-size: 30px;
+}
