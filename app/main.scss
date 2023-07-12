@@ -1,3 +1,5 @@
+@import "../styleUtils/variables.module.scss";
+
 //SERAVEK
 @font-face {
     font-family: "Seravek";
@@ -65,9 +67,22 @@
     font-weight: 400;
 }
 
-p {
-    font-family: "Poppins";
-    font-weight: 400;
-    color: black;
-    font-size: 30px;
+body {
+    background-color: $color-body;
+    padding: 0;
+    margin: 0;
+
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
 }
+
+
+.container {
+    max-width: 456px;
+    margin: 0 auto;
+}
+
+

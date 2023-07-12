@@ -1,0 +1,35 @@
+@import "../../styleUtils/variables.module.scss";
+@import "../../styleUtils/mixins.module.scss";
+
+.logo {
+
+
+    &__wrapper {
+        display: flex;
+        column-gap: 16px;
+        align-items: center;
+        padding: 22px Clamp(20px, 5vw, 36px) 0px;
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        font-family: $seravek;
+        font-size: $f-logo;
+        color: $color-black;
+        font-weight: 500;
+        line-height: 110%;
+    }
+
+    &__subtitle {
+        font-family: $poppins;
+        font-size: $f-label;
+        color: $color-disabled;
+        font-weight: 400;
+        line-height: 150%;
+    }
+
+}

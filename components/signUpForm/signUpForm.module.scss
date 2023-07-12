@@ -1,0 +1,225 @@
+@import "../../styleUtils/variables.module.scss";
+@import "../../styleUtils/mixins.module.scss";
+
+.form{
+    margin-top: Clamp(40px, 10vw, 98px);
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 22px;
+        justify-content: space-between;
+  
+        @include s {
+            padding: 0px 20px;
+        }
+    }
+}
+
+.textInput {
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+    width: 100%;
+    position: relative;
+
+
+    &__wrapper {
+        position: relative;
+    }
+
+    &__name {
+        font-family: $inter;
+        font-size: $f-label;
+        font-weight: 400;
+        line-height: 125%;
+        color: $color-text-gray;
+    }
+
+    &__error {
+        font-family: $inter;
+        color: $color-text-error;
+        font-size: $f-tip;
+        
+    }
+
+    input {
+        font-family: $inter;
+        font-size: $f-regular;
+        color: $color-text-secondary;
+        padding: 12px;
+        border-radius: $radius-primary;
+        border: 1px solid $color-text-disabled;
+        transition: .3s ease-in-out;
+        width: 100%;
+
+        &:hover {
+            border: 1px solid $color-text-secondary;
+        }
+    }
+
+    img {
+        position: absolute;
+        top: 50%;
+        right: 12px;
+        transform: translateY(-50%);
+    }
+
+    span {
+        color: $color-text-error;
+    }
+
+
+    &_short {
+        width: 47.7%;
+        @include s {
+            width: 100%;
+        }
+    }
+
+    
+}
+
+.radio {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+
+    &__label {
+        display: flex;
+        column-gap: 8px;
+        align-items: center;
+        cursor: pointer;
+
+        input {
+            display: none;
+        }
+
+        input:checked + div {
+            &:hover {
+                background-color: #a512ff0a;
+            }
+            &::after {
+                background-color: $color-primary-default;
+            }
+        }
+    }
+
+    &__title {
+        font-family: $inter;
+        font-size: $f-label;
+        font-weight: 400;
+        line-height: 125%;
+    }
+
+    &__wrapper {
+        display: flex;
+        column-gap: 40px;
+    }
+
+    &__fakeRadio {
+        width: 24px;
+        height: 24px;
+        border-radius: $radius-circle;
+        border: 2px solid $color-text-disabled;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .3s ease-in-out;
+        &:hover {
+            border: 2px solid $color-text-secondary;
+        }
+        &::after {
+            content: "";
+            width: 8px;
+            height: 8px;
+            border-radius: $radius-circle;
+            background-color: transparent;
+            transition: .1s linear;
+        }
+    }
+
+    &__text {
+        font-family: $inter;
+        font-size: $f-label;
+        color: $color-text-gray;
+    }
+
+
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    cursor: pointer;
+    &__title {
+        color: $color-black;
+        font-size: $f-label;
+        font-family: $inter;
+        font-weight: 400;
+    }
+
+    a {
+        text-decoration: unset;
+        color: $color-primary-default;
+    }
+
+    &__fakeInput {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 24px;
+        height: 24px;
+        border: 2px solid $color-disabled;
+        border-radius: 4px;
+        transition: .2s linear;
+        &:hover {
+            border: 2px solid $color-text-secondary;
+        }
+        img {
+            opacity: 0;
+            transition: .2s linear;
+        }
+    }
+
+    input {
+        display: none;
+    }
+
+    input:checked + div {
+        img {
+            opacity: 1;
+        }
+    }
+}
+
+
+.button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 0;
+    margin-top: 20px;
+    
+    font-family: $inter;
+    font-size: $f-regular;
+    color: $color-white;
+    background-color: $color-disabled;
+    
+    border: unset;
+    border-radius: $radius-primary;
+    transition: .3s ease-in-out;
+    pointer-events: none;
+    cursor: pointer;
+    
+    &:hover {
+        background-color: $color-primary-hover;
+    }
+
+    &_active {
+        background-color: $color-primary-default;
+        pointer-events: all;
+    }
+}

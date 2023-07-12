@@ -1,0 +1,17 @@
+@import "../../styleUtils/variables.module.scss";
+@import "../../styleUtils/mixins.module.scss";
+
+.link {
+    position: fixed;
+    bottom: 36px;
+    left: 36px;
+    font-family: $inter;
+    font-size: $f-regular;
+    color: $color-text-secondary;
+    text-decoration: unset;
+    cursor: pointer;
+    @include s {
+        left: 20px;
+        bottom: 40px;
+    }
+}

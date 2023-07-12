@@ -7,9 +7,11 @@ $color-text-primary: #62C991;
 $color-text-secondary: #5B5B5B;
 $color-text-disabled: #B1B1B1;
 $color-text-error: #CF4545;
+$color-text-gray: #252525;
 $color-black: #000000;
+$color-white: #ffffff;
 
-$color-body: #ffffff;
+$color-body: $color-white;
 
 //RADIUS
 $radius-primary: 8px;
@@ -20,4 +22,10 @@ $f-title: 32px;
 $f-regular: 16px;
 $f-label: 14px;
 $f-tip: 12px;
+$f-logo: 20px;
+
+//FONT FAMILIES
+$seravek: "Seravek";
+$inter: "Inter";
+$poppins: "Poppins";
 
