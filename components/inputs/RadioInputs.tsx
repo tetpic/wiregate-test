@@ -1,6 +1,14 @@
 "use client"
-export default function RadioInputs(props) {
-    let {inputs, style, title, name, onClick} = props
+
+interface RadioInputsProps {
+    inputs: {text: string}[], 
+    style: {[key: string]: string}, 
+    title: string, 
+    inputName: string, 
+    onClick: Function
+}
+export default function RadioInputs(props: RadioInputsProps) {
+    let {inputs, style, title, inputName, onClick} = props
     return(
     <div className={style.radio}>
         <p className={style.radio__title}>{title}</p>
@@ -8,7 +16,7 @@ export default function RadioInputs(props) {
             {inputs.map((el, index)=> {
                 return (
                 <label className={style.radio__label}  key={index}>
-                    <input type="radio" name={name} onChange={(event)=> {onClick(event)}} data-type={el.text}/>
+                    <input type="radio" name={inputName} onChange={(event)=> {onClick(event)}} data-type={el.text}/>
                     <div className={style.radio__fakeRadio}></div>
                     <p className={style.radio__text}>{el.text}</p>
                 </label>

@@ -3,11 +3,11 @@ import Image from "next/image"
 import doneArrow from "../../images/arrow-done.svg"
 
 export default function CheckboxInput(props) {
-    let {style, title, onClick, isChecked} = props  
+    let {style, title, onClick, isChecked, inputName} = props  
     
     return (<>
     <label className={style.checkbox}>
-        <input type="checkbox" checked={isChecked}  onChange={(event)=> {onClick(event)}}/>
+        <input type="checkbox" name={inputName} checked={isChecked}  onChange={(event)=> {onClick(event)}}/>
         <div className={style.checkbox__fakeInput}>
             <Image src={doneArrow} alt="arrow done"></Image>
         </div>

@@ -8,6 +8,6 @@ export default function MainPage() {
         <div className="container">
             <SignUpForm/>
         </div>
-        <EmailLink mail="Help@worktime.com"/>
+        <EmailLink mail={process.env.COMPANY_EMAIL}/>
     </>)
 }

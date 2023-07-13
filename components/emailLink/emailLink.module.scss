@@ -10,6 +10,7 @@
     color: $color-text-secondary;
     text-decoration: unset;
     cursor: pointer;
+    z-index: -1;
     @include s {
         left: 20px;
         bottom: 40px;
