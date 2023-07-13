@@ -26,6 +26,12 @@
 
     &__wrapper {
         position: relative;
+
+        &_error {
+            input {
+                color: $color-text-error;
+            }
+        }
     }
 
     &__name {
@@ -40,7 +46,6 @@
         font-family: $inter;
         color: $color-text-error;
         font-size: $f-tip;
-        
     }
 
     input {
@@ -56,6 +61,8 @@
         &:hover {
             border: 1px solid $color-text-secondary;
         }
+
+        
     }
 
     img {
