@@ -148,7 +148,7 @@ export default function SignUpForm() {
                 />
 
                 <RadioInputs 
-                    inputName={process.env.INPUTNAME_COMPANY}
+                    inputName="company"
                     inputs={[{text:"Yes"}, {text: "No"}]} 
                     style={s} title="Are you a company?" 
                     onClick={userStatus}
